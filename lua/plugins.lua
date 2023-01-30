@@ -77,4 +77,7 @@ return require('packer').startup(function(use)
     "glepnir/lspsaga.nvim",
     branch = "main",
   })
+
+  -- Indent Line
+  use "lukas-reineke/indent-blankline.nvim"
 end)
