@@ -30,3 +30,6 @@ keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
+-- Format
+keymap.set("n", "<leader>l", "<cmd>lua vim.lsp.buf.format({ async = false })<cr>", opts)
