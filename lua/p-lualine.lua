@@ -19,11 +19,11 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = { 'mode' },
-    lualine_b = { { 'filename', path = 3 } },
-    lualine_c = { 'diagnostics' },
-    lualine_x = {},
-    lualine_y = { '' },
-    lualine_z = { 'filetype' }
+    lualine_b = { 'branch', 'diff', 'diagnostics' },
+    lualine_c = { { 'filename', path = 3 } },
+    lualine_x = { 'fileformat' },
+    lualine_y = { 'filetype' },
+    lualine_z = { 'location' }
   },
   inactive_sections = {
     lualine_a = {},
