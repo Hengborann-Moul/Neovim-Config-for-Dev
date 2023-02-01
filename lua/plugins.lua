@@ -80,4 +80,7 @@ return require('packer').startup(function(use)
 
   -- Indent Line
   use "lukas-reineke/indent-blankline.nvim"
+
+  -- Move
+  use "matze/vim-move"
 end)
