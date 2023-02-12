@@ -83,4 +83,10 @@ return require('packer').startup(function(use)
 
   -- Move
   use "matze/vim-move"
+
+  -- Github Theme
+  use({ 'projekt0n/github-nvim-theme', branch = '0.0.x' })
+
+  -- GitSign
+  use 'lewis6991/gitsigns.nvim'
 end)

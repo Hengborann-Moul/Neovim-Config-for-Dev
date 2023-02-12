@@ -47,6 +47,3 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 opt.updatetime = 300
 opt.timeoutlen = 500
 
--- Modify key for Mac OS
-vim.g['move_key_modifier'] = 'C'
-vim.g['move_key_modifier_visualmode'] = 'C'
