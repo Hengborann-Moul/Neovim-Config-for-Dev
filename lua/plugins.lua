@@ -81,9 +81,6 @@ return require('packer').startup(function(use)
   -- Indent Line
   use "lukas-reineke/indent-blankline.nvim"
 
-  -- Move
-  use "matze/vim-move"
-
   -- Github Theme
   use({ 'projekt0n/github-nvim-theme', branch = '0.0.x' })
 
