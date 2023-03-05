@@ -33,3 +33,6 @@ keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Format
 keymap.set("n", "<leader>l", "<cmd>lua vim.lsp.buf.format({ async = false })<cr>", opts)
+
+-- ToggleTerm
+keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<cr>')
