@@ -91,4 +91,7 @@ return require('packer').startup(function(use)
 
   -- Color Highlight
   use 'NvChad/nvim-colorizer.lua'
+
+  -- One Dark Pro theme
+  use "olimorris/onedarkpro.nvim"
 end)
