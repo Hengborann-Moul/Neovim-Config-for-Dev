@@ -29,12 +29,14 @@ return require('packer').startup(function(use)
     tag = 'nightly'
   }
   use 'sainnhe/everforest'
+  use 'JoosepAlviste/palenightfall.nvim'
 
   use 'rmagatti/alternate-toggler'
   use 'windwp/nvim-autopairs'
   use 'mg979/vim-visual-multi'
   use 'gcmt/wildfire.vim'
   use 'tpope/vim-surround'
+  use 'tpope/vim-fugitive'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -82,8 +84,11 @@ return require('packer').startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
 
   -- Github Theme
-  use({ 'projekt0n/github-nvim-theme', branch = '0.0.x' })
+  use({ 'projekt0n/github-nvim-theme' })
 
   -- GitSign
   use 'lewis6991/gitsigns.nvim'
+
+  -- Color Highlight
+  use 'NvChad/nvim-colorizer.lua'
 end)

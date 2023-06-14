@@ -11,7 +11,6 @@ keymap.set('n', '<leader>x', '<cmd>x<cr>')
 keymap.set('n', '<c-a>', 'gg<S-v>G')
 
 keymap.set('n', '<leader>s', ':vsplit<Return><C-w>w', opts)
-keymap.set('n', 'f', '<C-w>w')
 
 keymap.set('n', 'H', '^')
 keymap.set('n', 'L', '$')
