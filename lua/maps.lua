@@ -33,5 +33,17 @@ keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Format
 keymap.set("n", "<leader>l", "<cmd>lua vim.lsp.buf.format({ async = false })<cr>", opts)
 
+function RangeFormatting()
+  vim.lsp.buf.format({
+    async = true,
+    range = {
+      ["start"] = vim.api.nvim_buf_get_mark(0, "<"),
+      ["end"] = vim.api.nvim_buf_get_mark(0, ">"),
+    }
+  })
+end
+
+keymap.set("v", "<leader>l", "<Esc><cmd>lua RangeFormatting()<CR>", { noremap = true })
+
 -- ToggleTerm
 keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<cr>')
